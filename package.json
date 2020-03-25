@@ -1,0 +1,35 @@
+{
+  "name": "web_name",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "devDependencies": {
+    "autoprefixer": "*",
+    "node-sass": "*",
+    "onchange": "*",
+    "postcss-cli": "*"
+  },
+  "scripts": {
+    "build:sass": "node-sass --output-style=expanded --source-map=true styles/style.scss styles/style.css",
+    "prefix": "npm run build:sass && postcss styles/style.css --use=autoprefixer --output=styles/style.css",
+    "start": "onchange \"styles/*.scss\" -- npm run prefix",
+    "postinstall": "echo \"\\033[41mChange the directory in package.json/scripts/build:sass, \"npm run start\" to start \\033[0m\""
+  },
+  "browserslist": [
+    "last 2 chrome version",
+    "last 2 firefox version",
+    "last 2 safari version",
+    "last 2 ie version"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "Repo/Path"
+  },
+  "keywords": [
+    "SASS"
+  ],
+  "author": "Ismail Farooq",
+  "license": "ISC",
+  "homepage": "Path",
+  "dependencies": {}
+}
