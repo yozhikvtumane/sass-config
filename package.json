@@ -16,10 +16,7 @@
     "postinstall": "echo \"\\033[41mChange the directory in package.json/scripts/build:sass, \"npm run start\" to start \\033[0m\""
   },
   "browserslist": [
-    "last 2 chrome version",
-    "last 2 firefox version",
-    "last 2 safari version",
-    "last 2 ie version"
+    "last 4 versions"
   ],
   "repository": {
     "type": "git",
