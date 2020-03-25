@@ -1,4 +1,5 @@
-# sass-config
+# sass-config  
+SCSS compiler, uses node-sass with autoprefixer through postcss. 
 
 ## SCSS compiler with autoprefixer
 
